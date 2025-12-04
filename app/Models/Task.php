@@ -7,10 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Task extends Model
 {
     protected $fillable = [
-        'name'
-        'status'
-        'priority'
-        'due_date'
+        'name',
+        'status',
+        'priority',
+        'due_date',
     ];
 
     protected $casts = [
@@ -18,7 +18,7 @@ class Task extends Model
         'due_date' => 'date',
     ];
 
-    protected $casts = [
+    protected $attributes = [
         'status' => false,
         'priority' => 3,
     ];
